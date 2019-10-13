@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "269fb8d0-1a6e-4942-b8f9-c5dff395ef9b",
+		"name": "fashion-cloud-cache-api",
+		"description": "Following features have to be implemented for the cache:\n● Add an endpoint that returns the cached data for a given key\n○ If the key is not found in the cache:\n■ Log an output “Cache miss”\n■ Create a random string\n■ Update the cache with this random string\n■ Return the random string\n○ If the key is found in the cache:\n■ Log an output “Cache hit”\n■ Get the data for this key\n■ Return the data\n● Add an endpoint that returns all stored keys in the cache\n● Add an endpoint that creates/updates the data for a given key\n● Add an endpoint that removes a given key from the cache\n● Add an endpoint that removes all keys from the cache\nFollowing additional features have to be also included:\n● The number of entries allowed in the cache is limited. If the maximum amount of\ncached items is reached, some old entry needs to be overwritten (Please explain the\napproach of what is overwritten in the comments of the source code)\n● Every cached item has a Time To Live (TTL). If the TTL is exceeded, the cached data will\nnot be used. A new random value will then be generated (just like cache miss). The TTL\nwill be reset on every read/cache hit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL cache",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/listAllCache",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"listAllCache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY KEY cache/:key",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getSingleCache/vic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getSingleCache",
+						"vic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST createOrUpdateCache",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/createOrUpdateCache/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"createOrUpdateCache",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT createOrUpdateCache",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/createOrUpdateCache/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"createOrUpdateCache",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSingleCache",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/deleteSingleCache/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deleteSingleCache",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllCache",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/deleteAllCache",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"deleteAllCache"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
