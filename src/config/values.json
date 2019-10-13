@@ -1,0 +1,34 @@
+{
+	"cache_miss": "Cache miss",
+	"cache_hit": "Cache hit",
+	"no_keys": "No Keys Found! Try posting new data...",
+	"unexpected_error": "Unexpected error occured, Error: ",
+	"bad_request": "Bad request: Paramter content is required",
+	"content_inserted_to_db": "Content has been successfully added in db.",
+	"deleted_single_key": " has been deleted successfully",
+	"deleted_all_keys": "All keys have been deleted successfully",
+	"mongodb_connection_success": "MongoDb connection established",
+	"mongodb_connection_error": "Error encountered connecting to db",
+	"server_port_connection": "Server running on port ",
+	"database": {
+		"mongodb": {
+			"url": "mongodb://localhost:27017/fashioncloud-exercise",
+			"autoReconnect": true,
+			"autoRemove": "native",
+			"autoRemoveInterval": 10,
+			"seed": false
+		},
+		"test": {
+			"mongodb": {
+				"url": "mongodb://127.0.0.1:27017/fashioncloud-exercise-test",
+				"autoReconnect": true,
+				"autoRemove": "native",
+				"autoRemoveInterval": 3,
+				"seed": true
+			}
+		},
+		"cache": {
+			"maxLimit": 3
+		}
+	}
+}
