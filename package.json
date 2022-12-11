@@ -15,7 +15,7 @@
     "crypto": "^1.0.1",
     "errorhandler": "^1.5.1",
     "eslint": "^6.5.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "lodash": "^4.17.15",
     "mocha": "^6.2.1",
